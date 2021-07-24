@@ -30,3 +30,11 @@ D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\bin\Antlr3.Runtime.pdb
 D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\obj\Debug\RahulRadicalWebAPI.csprojResolveAssemblyReference.cache
 D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\obj\Debug\RahulRadicalWebAPI.dll
 D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\obj\Debug\RahulRadicalWebAPI.pdb
+D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\bin\EntityFramework.dll
+D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\bin\EntityFramework.SqlServer.dll
+D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\bin\EntityFramework.xml
+D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\bin\EntityFramework.SqlServer.xml
+D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\obj\Debug\RahulRadicalWebAPI.Migrations.createStudent.resources
+D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\obj\Debug\RahulRadicalWebAPI.csproj.GenerateResource.Cache
+D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\obj\Debug\RahulRadicalWebAPI.Migrations.AddingNewColumnTname.resources
+D:\Madiha\RahulRadicalWebAPI\RahulRadicalWebAPI\obj\Debug\RahulRadicalWebAPI.Migrations.DroppingNewColumnTname.resources

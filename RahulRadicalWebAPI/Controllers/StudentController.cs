@@ -10,50 +10,62 @@ namespace RahulRadicalWebAPI.Controllers
 {
     public class StudentController : ApiController
     {
-        private static List<Student> students = new List<Student>();
+       // private static List<Student> students = new List<Student>();
+        private static StudentContxt contxt = new StudentContxt();
         // GET api/Student
         public IEnumerable<Student> Get()
         {
-            return students;
+           return contxt.students.ToList();
         }
 
         // GET api/Student/1001
         public Student Get(int id)
         {
-            return students.Where(s => s.ID == id).FirstOrDefault();
+            return contxt.students.Where(s => s.ID == id).FirstOrDefault();
+          
         }
 
         // POST api/Student
         public void Post([FromBody]Student student)
         {
-            students.Add(student);
+            contxt.students.Add(student);
+            contxt.SaveChanges();
 
         }
 
         // PUT api/Student/1001
         public void Put(int id, [FromBody]Student student)
         {
-            var st = students.Where(s => s.ID == id).FirstOrDefault();
-
-            if (st !=null)
+            var st = contxt.students.Where(s => s.ID == id).FirstOrDefault();
+           
+            if (st!=null)
             {
                 st.Name = student.Name;
                 st.Class = student.Class;
+
+                contxt.SaveChanges();
             }
 
-            students.Remove(students.Where(s => s.ID == id).FirstOrDefault());
-            students.Add(st);
+           
         }
 
         // DELETE api/Student/1001
         public void Delete(int id)
         {
-            var st = students.Where(s => s.ID == id).FirstOrDefault();
+            var st = contxt.students.Where(s => s.ID == id).FirstOrDefault();
 
-            if (st !=null)
+            if (st != null)
             {
-                students.Remove(st);
+                contxt.students.Remove(st);
+
+                contxt.SaveChanges();
             }
+        }
+
+        ~StudentController()
+        {
+            contxt.Dispose();
+        
         }
     }
 }
